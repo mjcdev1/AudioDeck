@@ -3,6 +3,13 @@
 ## What is an AudioDeck? 
 A desktop audio controller for Windows computers - allowing users to modify various sound and microphone settings on the fly without havng to stop what they are doing on their PC. 
 
+## Development Quick Links
+
+| Document | Link |
+|---|---|
+| Changelog | [View](docs/development/changelog.md) |
+| Todo | [View](docs/development/todo.md) |
+
 ## Directory Guide
 ```text
 / *** The directory/ organization setup will likely change often and I will try to keep this guide updated as such

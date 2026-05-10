@@ -49,6 +49,13 @@ No changes yet.
 --- 
 
 ### 📚 DOCUMENTATION/ ASSETS/ ORGANIZATION — Rev A2
+<details>
+<summary><strong>Rev A3 (MINOR) — pending rel</strong></summary>
+
+- Squashed all old tiny commits into one initial setup commit
+- Reorganized directory layout and general organization 
+
+</details>
 
 <details>
 <summary><strong>Rev A2 (MINOR) — 2026/05/08</strong></summary>

@@ -6,11 +6,11 @@
 ## Todo in Software...
 
 ## Todo in Documentation/ Assets/ Organization...
-  - [ ] Reorganize directories per updated organization design... 
-    - [ ] Move /assets into /docs [ ]
-    - [ ] Create /docs/guides, /docs/references, and /docs/development 
-    - [ ] Move changelog.md, changelog_rules.md and todo.md into /docs/development [ ]
-    - [ ] Create /software and move /firmware and /pc-app into it [ ]
+  - [X] Reorganize directories per updated organization design... 
+    - [X] Move /assets into /docs [ ]
+    - [X] Create /docs/guides, /docs/references, and /docs/development 
+    - [X] Move changelog.md, changelog_rules.md and todo.md into /docs/development [ ]
+    - [X] Create /software and move /firmware and /pc-app into it [ ]
 
- - [ ] Create pinout table
+ - [X] Create pinout table
  - [ ] Create key switch matrix wiring guide

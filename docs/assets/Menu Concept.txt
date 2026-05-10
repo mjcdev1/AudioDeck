@@ -1,0 +1,105 @@
+Idle Screen
++------------------------------+
+| 12:45 PM                     |
+| Tue, Apr 28                  |
+|                              |
+| PC Status: Connected         |
+|                              |
+|                              |
++------------------------------+
+
+Main Menu
++------------------------------+
+| Main Menu                    |
+|                              |
+| > App Volumes                |
+|   System Audio               |
+|   Audio Output               |
+|   Microphone Input           |
+|   Settings                   |
++------------------------------+
+
+App Volumes
++------------------------------+
+| App Volumes                  |
+|                              |
+| > Discord   [########--] 74% |
+|   Spotify   [#####-----] 50% |
+|   CS2.exe   [##########]100% |
+|   Chrome    [###-------] 25% |
+|                              |
++------------------------------+
+
+App Control (Spotify)
++------------------------------+
+| Spotify                      |
+|                              |
+| Volume: 50%                  |
+| [#####-----]                 |
+|                              |
+| Pinned: No                   |
+|                              |
++------------------------------+
+
+System Audio
++------------------------------+
+| System Audio                 |
+|                              |
+| Volume: 100%                 |
+| [##########]                 |
+|                              |
+| Mic: MUTED                   |
+|                              |
++------------------------------+
+
+Audio Output
++------------------------------+
+| Audio Output                 |
+|                              |
+| > Headphones                 |
+|   Speakers                   |
+|                              |
+|                              |
+|                              |
++------------------------------+
+
+Microphone Input
++------------------------------+
+| Microphone Input             |
+|                              |
+| > External Mic               |
+|   Built-in Mic               |
+|                              |
+|                              |
+|                              |
++------------------------------+
+
+Settings
++------------------------------+
+| Settings                     |
+|                              |
+| > Brightness                 |
+|   Screen Timeout             |
+|   Knob Sensitivity           |
+|   Reset Favorites            |
+|                              |
++------------------------------+
+
+Controls
+Encoder A (Rotate)   - Navigate menus  
+Encoder A (Press)    - Select/ Confirm  
+Encoder A (Hold)     - Go Back  
+
+Encoder B (Rotate)   - Adjust per-app volume  
+Encoder B (Press)    - Toggle app mute  
+
+Slider               - Master volume (always active)  
+
+Next                 - Next track  
+Previous             - Previous track  
+Play/ Pause          - Toggle play/pause 
+
+System Mute          - Mute all system audio  
+Mic Mute             - Mute microphone  
+
+M1–M5                - User defined macros  

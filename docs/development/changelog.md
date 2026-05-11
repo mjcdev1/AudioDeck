@@ -22,13 +22,19 @@ COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 
 ### 🔌 HARDWARE — Rev A0
 
-#### ENCLOSURE — Rev A0
-No changes yet.
+#### ENCLOSURE — Prototype A1
+<details>
+<summary><strong>Prototype A1 (MINOR) — 2026/05/10</strong></summary>
+
+- Designed prototyping plate with cutouts and mounts for all parts
+  - Sliced and included individual fit test slots to print and confirm fit before printing the full plate
+
+</details>
    
-#### ELECTRONICS — Rev A1
+#### ELECTRONICS — Prototype A1
 
 <details>
-<summary><strong>Rev A1 (MINOR) — 2026/05/07</strong></summary>
+<summary><strong>Prototype A1 (MINOR) — 2026/05/07</strong></summary>
 
 - Designed initial wiring schematic
   - Created custom symbols of core components where suitable presets could not be found (RP2040, ILI9341)

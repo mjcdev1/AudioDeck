@@ -2,6 +2,8 @@
 
 ## Todo in Hardware...
   - [ ] Build simple prototype on breadboard
+    - [ ] Design prototyping plate
+  - [ ] Change schematic to use 4 pin (4 color) LED instead of single color
 
 ## Todo in Software...
 

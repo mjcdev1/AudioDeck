@@ -16,25 +16,50 @@ COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 -->
 # Changelog!
 
-### PROJECT — Version 0
+### PROJECT — Prototype 1.0 (In Progress)
 
 --- 
 
-### 🔌 HARDWARE — Rev A0
+### 🔌 HARDWARE — Rev 1.1
 
-#### ENCLOSURE — Prototype A1
+#### ENCLOSURE — Prototype 1.1
 <details>
-<summary><strong>Prototype A1 (MINOR) — 2026/05/10</strong></summary>
+<summary><strong>Additions and Changes for Prototype 1.1 — 2026/05/12</strong></summary>
+
+- Added three additional LED slots
+- Added SPDT Toggle ON-OFF-ON slot
+- Tested fitment of all slots with 3D printed cutouts
+  - Adjusted EC11 slots for better fitment
+
+</details>
+
+#### ENCLOSURE — Prototype 1.0
+<details>
+<summary><strong>Initial Prototype 1.0 Designs — 2026/05/10</strong></summary>
 
 - Designed prototyping plate with cutouts and mounts for all parts
   - Sliced and included individual fit test slots to print and confirm fit before printing the full plate
 
 </details>
-   
-#### ELECTRONICS — Prototype A1
+
+#### ELECTRONICS — Prototype 1.1
 
 <details>
-<summary><strong>Prototype A1 (MINOR) — 2026/05/07</strong></summary>
+<summary><strong>Additions and Changes for Prototype 1.1 — 2026/05/12</strong></summary>
+
+- Changed MIC MUTE LED to use a 4-pin common cathode full-color LED
+- Added three more full-color LEDs. Each one will indicate the on status one of three macro layers or one of three custom audio profiles
+- Created custom symbol for a 3 pin, ON-OFF-ON SPDT Toggle Switch, and added it to the schematic. This will act as the macro layer/ audio profile selector
+- Rearranged pinouts, specifically of EC11 (B), and the Piezo Buzzer
+- Redid the piezo buzzer, as it is an active buzzer and requires a transistor and flyback diode for safety
+- Added various decoupling capacitors throughout the circuit 
+
+</details>
+   
+#### ELECTRONICS — Prototype 1.0 
+
+<details>
+<summary><strong>Initial Electronic Architecture Design — 2026/05/10</strong></summary>
 
 - Designed initial wiring schematic
   - Created custom symbols of core components where suitable presets could not be found (RP2040, ILI9341)
@@ -51,37 +76,3 @@ No changes yet.
 
 #### PC APP — v0.0.0
 No changes yet.
-
---- 
-
-### 📚 DOCUMENTATION/ ASSETS/ ORGANIZATION — Rev A2
-<details>
-<summary><strong>Rev A3 (MINOR) — pending rel</strong></summary>
-
-- Squashed all old tiny commits into one initial setup commit
-- Reorganized directory layout and general organization 
-
-</details>
-
-<details>
-<summary><strong>Rev A2 (MINOR) — 2026/05/08</strong></summary>
-
-- Added new version of Layout Version 1 image, with labelled components
-- Generated and added Layout Version 1 realistic render
-- Created todo
-- Modified directory organization
-- Created directory guide
-- Updated changelog layout and rules
-- Started writing pinout table document
-
-</details>
-
-<details>
-<summary><strong>Rev A1 (MINOR) — 2026/05/07</strong></summary>
-
-- Added simple descriptions for all readme files in each directory. 
-- Created changelog formatting rules and conventions.
-- Reformatted changelog layout.
-
-</details>
-    

@@ -3,12 +3,12 @@
 > [!NOTE]
 > This document provides the pinouts for the latest stable Electronics release version.
 >
-> Currently, it reflects the pinouts for [Electronics Prototype 1.1](hardware/electronics/Prototype 1.1).
+> Currently, it reflects the pinouts for [Electronics Prototype 1.1](/hardware/Electronics/Prototype%201.1).
 
 > [!IMPORTANT]
 > Cherry MX keyswitch pinouts are not included in this document, as they require a row/column matrix setup.
 >
-> Please refer to the [Key Matrix Wiring Guide](guides/key_matrix_wiring_guide.md).
+> Please refer to the [Key Matrix Wiring Guide](/docs/guides/key_matrix_wiring_guide.md)
 
 > [!NOTE]
 > - Unused pins from the schematic are not included in this table.
@@ -19,7 +19,7 @@
 
 > [!CAUTION]
 > - Components purchased from vendors other than those listed in the recommended component purchase guide may have different pin layouts or orientations. As a result, some pinouts in this document may not exactly match your components.
-> - For the best results and to help keep this document accurate, please use the components listed in the [Project Component Purchase Guide](guides/project_component_purchase_guide.md).
+> - For the best results and to help keep this document accurate, please use the components listed in the [Project Component Purchase Guide](/docs/guides/component_purchase_guide.md).
 
 ### EC11 Encoder A
 
@@ -70,7 +70,7 @@
 
 ### Mode LEDs (3)
 
-> Pinout information for this specific 4-pin full-color LED is available [here](docs/references).
+> Pinout information for this specific 4-pin full-color LED is available [here](/docs/references/Full-Colored%20LED%205mm%20DATASHEET.webp)
 
 | LED | Pin From | Through | Pin To |
 | --- | --- | --- | --- |
@@ -81,7 +81,7 @@
 
 ### Status LEDs (1)
 
-> Pinout information for this specific 4-pin full-color LED is available [here](docs/references).
+> Pinout information for this specific 4-pin full-color LED is available [here](/docs/references/Full-Colored%20LED%205mm%20DATASHEET.webp)
 
 | LED | Pin From | Through | Pin To |
 | --- | --- | --- | --- |

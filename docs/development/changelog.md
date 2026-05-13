@@ -2,7 +2,7 @@
 COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 
 <details>
-<summary><strong>Rev A# (TYPE) — YYYY/MM/DD</strong></summary>
+<summary><strong>Prototype X.X — YYYY/MM/DD</strong></summary>
 
 - Main change
   - Sub change
@@ -14,65 +14,98 @@ COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 </details>
 
 -->
+
 # Changelog!
 
-### PROJECT — Prototype 1.0 (In Progress)
+## PROJECT — Prototype 1.0 (In Progress)
 
---- 
+## 🔌 HARDWARE — Prototype 1.2
 
-### 🔌 HARDWARE — Rev 1.1
+### ENCLOSURE
 
-#### ENCLOSURE — Prototype 1.1
 <details>
-<summary><strong>Additions and Changes for Prototype 1.1 — 2026/05/12</strong></summary>
+<summary><strong>Prototype 1.1</strong></summary>
 
+#### 2026/05/12
 - Added three additional LED slots
-- Added SPDT Toggle ON-OFF-ON slot
-- Tested fitment of all slots with 3D printed cutouts
-  - Adjusted EC11 slots for better fitment
+- Added slot for an ON-OFF-ON SPDT toggle switch
+- Tested fitment of all component cutouts using 3D printed test pieces
+  - Adjusted EC11 cutouts for improved fitment
 
 </details>
-
-#### ENCLOSURE — Prototype 1.0
-<details>
-<summary><strong>Initial Prototype 1.0 Designs — 2026/05/10</strong></summary>
-
-- Designed prototyping plate with cutouts and mounts for all parts
-  - Sliced and included individual fit test slots to print and confirm fit before printing the full plate
-
-</details>
-
-#### ELECTRONICS — Prototype 1.1
 
 <details>
-<summary><strong>Additions and Changes for Prototype 1.1 — 2026/05/12</strong></summary>
+<summary><strong>Prototype 1.0</strong></summary>
 
-- Changed MIC MUTE LED to use a 4-pin common cathode full-color LED
-- Added three more full-color LEDs. Each one will indicate the on status one of three macro layers or one of three custom audio profiles
-- Created custom symbol for a 3 pin, ON-OFF-ON SPDT Toggle Switch, and added it to the schematic. This will act as the macro layer/ audio profile selector
-- Rearranged pinouts, specifically of EC11 (B), and the Piezo Buzzer
-- Redid the piezo buzzer, as it is an active buzzer and requires a transistor and flyback diode for safety
-- Added various decoupling capacitors throughout the circuit 
+#### 2026/05/10
+- Designed initial prototyping plate with mounts and cutouts for all planned components
+  - Created individual fit-test cutouts before printing the full plate
 
 </details>
-   
-#### ELECTRONICS — Prototype 1.0 
+
+### ELECTRONICS
 
 <details>
-<summary><strong>Initial Electronic Architecture Design — 2026/05/10</strong></summary>
+<summary><strong>Prototype 1.3 </strong></summary>
 
-- Designed initial wiring schematic
-  - Created custom symbols of core components where suitable presets could not be found (RP2040, ILI9341)
-  - Made VCC and GND NETs
-  - Created a realistic wiring scheme between all components and the RP2040 processor
+#### 2026/05/18
+
+- Created and added a custom schematic symbol for WS2812B ARGB LEDs (through-hole, individual)
+- Replaced all common cathode 4-pin RGB LEDs with WS2812B ARGB LEDs
+  - Added support circuitry for addressable LED communication
+  - Added double-transistor level shifter for 3.3V to 5V data conversion
+  - Added additional (5th) ARGB LED
 
 </details>
 
---- 
+<details>
+<summary><strong>Prototype 1.2 </strong></summary>
 
-### 💻 SOFTWARE — v0.0.0
-#### FIRMWARE — v0.0.0
+#### 2026/05/13
+- Completely rewired the 10-key matrix
+- Converted matrix wiring to a COL2ROW configuration
+- Corrected previous matrix routing issues to ensure proper electrical functionality
+
+</details>
+
+<details>
+<summary><strong>Prototype 1.1</strong></summary>
+
+#### 2026/05/12
+
+- Changed MIC MUTE LED to a 4-pin common cathode RGB LED
+- Added three additional RGB LEDs
+  - Intended to indicate active macro layers or custom audio profiles
+- Created and added a custom schematic symbol for a 3-pin ON-OFF-ON SPDT toggle switch
+  - Intended for macro layer and audio profile selection
+- Rearranged several GPIO assignments
+  - Primarily affecting EC11 (B) and the piezo buzzer
+- Redesigned the piezo buzzer circuit
+  - Added transistor driver and flyback diode protection
+- Added additional decoupling capacitors throughout the circuit
+
+</details>
+
+<details>
+<summary><strong>Prototype 1.0</strong></summary>
+
+#### 2026/05/10
+
+- Designed the initial wiring schematic
+- Created custom symbols for unsupported components
+  - RP2040
+  - ILI9341
+- Added shared VCC and GND nets
+- Connected all primary external components to the RP2040
+
+</details>
+
+## 💻 SOFTWARE — v0.0.0
+
+### FIRMWARE — v0.0.0
+
 No changes yet.
 
-#### PC APP — v0.0.0
+### PC APP — v0.0.0
+
 No changes yet.

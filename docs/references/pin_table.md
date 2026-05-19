@@ -3,7 +3,7 @@
 > [!NOTE]
 > This document provides the pinouts for the latest stable Electronics release version.
 >
-> Currently, it reflects the pinouts for [Electronics Prototype 1.1](/hardware/Electronics/Prototype%201.1).
+> Currently, it reflects the pinouts for [Electronics Prototype 0.5](/hardware/Electronics/Prototype%201.1).
 
 > [!IMPORTANT]
 > Cherry MX keyswitch pinouts are not included in this document, as they require a row/column matrix setup.
@@ -25,9 +25,9 @@
 
 | Pin From | Pin To |
 | --- | --- |
-| **S** <sub>Switch</sub> | GPIO `4` |
-| **A** <sub>Out A</sub> | GPIO `5` |
-| **B** <sub>Out B</sub> | GPIO `3` |
+| **S** <sub>Switch</sub> | GPIO `2` |
+| **A** <sub>Out A</sub> | GPIO `3` |
+| **B** <sub>Out B</sub> | GPIO `1` |
 | **G** <sub>Ground</sub> | GND Rail |
 
 ### EC11 Encoder B
@@ -47,12 +47,20 @@
 | **VCC** | 3V3 Rail |
 | **GND** | GND Rail |
 
-### ON-OFF-ON SPDT Toggle Switch
+### ON-OFF-ON SPDT Toggle Switch A
 
 | Pin From | Pin To |
 | --- | --- |
-| **ON_A** | GPIO `1` |
-| **ON_B** | GPIO `0` |
+| **ON_A** | GPIO `5` |
+| **ON_B** | GPIO `4` |
+| **GND** | GND Rail |
+
+### ON-OFF-ON SPDT Toggle Switch B
+
+| Pin From | Pin To |
+| --- | --- |
+| **ON_A** | GPIO `7` |
+| **ON_B** | GPIO `6` |
 | **GND** | GND Rail |
 
 ### Piezo Active Buzzer Circuit
@@ -61,34 +69,34 @@
 
 | Pin From | Through | Pin To |
 | --- | --- | --- |
-| 2N4401 **Base** | 1 kΩ resistor | GPIO `2` |
+| 2N4401 **Base** | 1kΩ resistor | GPIO `2` |
 | 2N4401 **Emitter** |  | GND Rail |
 | Piezo **Negative** |  | 2N4401 **Collector** |
 | Piezo **Positive** |  | 3V3 Rail |
 | 1N4007 **Anode** |  | Piezo **Negative** / 2N4401 **Collector** |
 | 1N4007 **Cathode** |  | 3V3 Rail |
 
-### Mode LEDs (3)
+### WS2812B ARGB LED Chain (8)
 
-> Pinout information for this specific 4-pin full-color LED is available [here](/docs/references/Full-Colored%20LED%205mm%20DATASHEET.webp)
+| Pin From | Through | Pin To |
+| --- | --- | --- |
+| LSQ1 **Base** | 1kΩ resistor | GPIO `16` |
+| LSQ1 **Emitter** |  | GND Rail |
+| LSQ1 **Collector** | 2.2kΩ resistor | 5V Rail |
+| LSQ1 **Collector** / 2.2kΩ node | 1kΩ resistor | LSQ2 **Base** |
+| LSQ2 **Emitter** |  | GND Rail |
+| LSQ2 **Collector** | 2.2kΩ resistor | 5V Rail |
+| LSQ2 **Collector** / 2.2kΩ node | 470Ω resistor | LED 1 **DIN** |
+| LED 1 **DOUT** |  | LED 2 **DIN** |
+| LED 2 **DOUT** |  | LED 3 **DIN** |
+| LED 3 **DOUT** |  | LED 4 **DIN** |
+| LED 4 **DOUT** |  | LED 5 **DIN** |
+| LED 5 **DOUT** |  | LED 6 **DIN** |
+| LED 6 **DOUT** |  | LED 7 **DIN** |
+| LED 7 **DOUT** |  | LED 8 **DIN** |
+| All LED **VDD** pins |  | 5V Rail |
+| All LED **GND** pins |  | GND Rail |
 
-| LED | Pin From | Through | Pin To |
-| --- | --- | --- | --- |
-| LED_MODE_A | **B** <sub>Blue</sub> | 470 Ω resistor | GPIO `13` |
-| LED_MODE_B | **G** <sub>Green</sub> | 470 Ω resistor | GPIO `14` |
-| LED_MODE_C | **R** <sub>Red</sub> | 470 Ω resistor | GPIO `15` |
-| ALL | **Common Cathode** |  | GND Rail |
-
-### Status LEDs (1)
-
-> Pinout information for this specific 4-pin full-color LED is available [here](/docs/references/Full-Colored%20LED%205mm%20DATASHEET.webp)
-
-| LED | Pin From | Through | Pin To |
-| --- | --- | --- | --- |
-| LED_MIC_MUTE | **B** <sub>Blue</sub> | 470 Ω resistor | GPIO `16` |
-| LED_MIC_MUTE | **G** <sub>Green</sub> | 470 Ω resistor | GPIO `17` |
-| LED_MIC_MUTE | **R** <sub>Red</sub> | 470 Ω resistor | GPIO `18` |
-| ALL | **Common Cathode** |  | GND Rail |
 
 ### ILI9341 2.4" Display
 
@@ -110,3 +118,6 @@
 | 3V3 Rail | 0.1 µF ceramic capacitor | GND Rail |
 | 3V3 Rail | 4.7 µF ceramic capacitor | GND Rail |
 | ILI9341 VCC | 0.1 µF ceramic capacitor | ILI9341 GND |
+| R3 / 5V rail node | 0.1 µF ceramic capacitor | GND |
+| R5 / 5V rail node | 0.1 µF ceramic capacitor | GND |
+| LED1 VDD / 5V rail node | 0.1 µF ceramic capacitor | GND |

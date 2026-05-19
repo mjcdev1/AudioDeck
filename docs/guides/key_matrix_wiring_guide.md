@@ -45,13 +45,13 @@ With the rows and columns formed, you can directly connect them (from anywhere o
 
 | Matrix Reference | GPIO Pin |
 |---|---|
-| COL1 | GPIO `8` |
-| COL2 | GPIO `9` |
-| COL3 | GPIO `10` |
-| COL4 | GPIO `11` |
-| COL5 | GPIO `12` |
-| ROW1 | GPIO `7` |
-| ROW2 | GPIO `6` |
+| COL1 | GPIO `11` |
+| COL2 | GPIO `12` |
+| COL3 | GPIO `13` |
+| COL4 | GPIO `14` |
+| COL5 | GPIO `15` |
+| ROW1 | GPIO `10` |
+| ROW2 | GPIO `9` |
 
 ---
 

@@ -17,14 +17,21 @@ COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 
 # Changelog!
 
-## PROJECT — Prototype 1.0 (In Progress)
-
-## 🔌 HARDWARE — Prototype 1.2
+## 🔌 HARDWARE — Prototype 0.3
 
 ### ENCLOSURE
 
 <details>
-<summary><strong>Prototype 1.1</strong></summary>
+<summary><strong>Prototype 0.3</strong></summary>
+
+#### 2026/05/19
+- Added four additional LED slots
+- Added slot for a second ON-OFF-ON SPDT toggle
+
+</details>
+
+<details>
+<summary><strong>Prototype 0.2</strong></summary>
 
 #### 2026/05/12
 - Added three additional LED slots
@@ -35,7 +42,7 @@ COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 </details>
 
 <details>
-<summary><strong>Prototype 1.0</strong></summary>
+<summary><strong>Prototype 0.1</strong></summary>
 
 #### 2026/05/10
 - Designed initial prototyping plate with mounts and cutouts for all planned components
@@ -46,20 +53,35 @@ COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 ### ELECTRONICS
 
 <details>
-<summary><strong>Prototype 1.3 </strong></summary>
+<summary><strong>Prototype 0.5 </strong></summary>
 
-#### 2026/05/18
+#### 2026/05/19
 
-- Created and added a custom schematic symbol for WS2812B ARGB LEDs (through-hole, individual)
-- Replaced all common cathode 4-pin RGB LEDs with WS2812B ARGB LEDs
-  - Added support circuitry for addressable LED communication
-  - Added double-transistor level shifter for 3.3V to 5V data conversion
-  - Added additional (5th) ARGB LED
+- Added three more WS2812B ARGB LEDs
+  - Intended to indicate the current macro layer
+- Added another 3-pin ON-OFF-ON toggle switch (Referred to as Toggle Switch B)
+  - Will allow the user to switch between three macro layers
+- Rearranged some pin placements, specifically affecting the key matrix, EC11-A and Toggle Switch A.
+- Updated pinout reference to reflect changes
 
 </details>
 
 <details>
-<summary><strong>Prototype 1.2 </strong></summary>
+<summary><strong>Prototype 0.4 </strong></summary>
+
+#### 2026/05/18
+
+- Added 5V rail net from VOUT on RP2040
+- Created and added a custom schematic symbol for WS2812B ARGB LEDs (through-hole, individual)
+- Replaced all common cathode 4-pin RGB LEDs with WS2812B ARGB LEDs
+- Added support circuitry for addressable LED communication
+- Added double-transistor level shifter for 3.3V to 5V data conversion
+- Added additional (5th) ARGB LED
+
+</details>
+
+<details>
+<summary><strong>Prototype 0.3 </strong></summary>
 
 #### 2026/05/13
 - Completely rewired the 10-key matrix
@@ -69,7 +91,7 @@ COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 </details>
 
 <details>
-<summary><strong>Prototype 1.1</strong></summary>
+<summary><strong>Prototype 0.2</strong></summary>
 
 #### 2026/05/12
 
@@ -87,7 +109,7 @@ COLLAPSIBLE CHANGELOG ENTRY TEMPLATE
 </details>
 
 <details>
-<summary><strong>Prototype 1.0</strong></summary>
+<summary><strong>Prototype 0.1</strong></summary>
 
 #### 2026/05/10
 

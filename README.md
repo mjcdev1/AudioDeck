@@ -3,6 +3,16 @@
 ## What is an AudioDeck? 
 A desktop audio controller for Windows computers - allowing users to modify various sound and microphone settings on the fly without havng to stop what they are doing on their PC. 
 
+## Compatible Component Versions for Latest Product Release
+#### To ensure full compatibility, the following component versions should be used when building the latest stable version of the project:
+
+| Component | Version |
+|---|---|
+| Electronics | Prototype 0.5 |
+| Enclosure | Prototype 0.3 |
+| Firmware | N/A |
+| PC Home App | N/A |
+
 ## Important Quick Links
 
 #### Building
